@@ -1,3 +1,10 @@
-body {
-    background-color:aqua;
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+h1 {
+    font-family: "Ballet";
+}
+
+p {
+    font-family: "Josefin Sans";
 }
