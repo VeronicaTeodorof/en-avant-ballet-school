@@ -20,21 +20,50 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
+  <body class="d-flex flex-column min-vh-100">
     <!-- Header-->
     <header>
       <!-- Navigation -->
+      <div>Navigation</div>
     </header>
 
     <!-- Main -->
     <main>
       <!-- Cover section -->
-      <!-- Testimonials -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">En Avant lead text section</div>
+          <div class="col-12">Carousel</div>
+        </div>
+      </section>
+      <!-- Testimonials section -->
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">Testimonials heading</div>
+          <div class="col-12 col-md-6 col-xl-3">Testimonials card</div>
+          <div class="col-12 col-md-6 col-xl-3">Testimonials card</div>
+          <div class="col-12 col-md-6 col-xl-3">Testimonials card</div>
+          <div class="col-12 col-md-6 col-xl-3">Testimonials card</div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <!-- Contact section -->
+    <!-- Footer / contact section -->
+    <!-- footer element is placed outside of the grid structure to make sure it spans the whole width of the page for styling purposes-->
+    <footer class="mt-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">Contact section heading</div>
+          <!-- Contact info -->
+          <div class="col-12 col-md-6">Contact info</div>
+          <!-- Office opening times -->
+          <div class="col-12 col-md-6">Office opening times</div>
+          <!-- Social media links -->
+          <div class="col-12">Socil media links</div>
+         
+        </div>
+      </div>
     </footer>
 
     <!--Bootstrap JS -->
