@@ -5,6 +5,7 @@
 :root {
   --primary-font: "Roboto", sans-serif;
   --secondary-font: "Luxurious Script", cursive;
+  --primary-background-color: #212529; /* dark */
   --primary-color: #314459; /* pickled bluewood */
   --secondary-color: #d5436f; /* deep rose */ 
   --highlight-color: #93a3b5; /* cadet grey */
@@ -28,7 +29,19 @@ h3 {
 }
 
 p {
-  color: var(--secondary-color)
+  color: var(--contrast-primary-color);
+}
+
+/* Navbar */
+#navbar {
+  background-color: var(--primary-background-color);
+  color: var(--secondary-color);
+}
+
+/* Main */
+/* push main down so that navbar doesn't overlap */
+main {
+  padding-top: 56px;
 }
 
 /* grid visualisation CSS for testing */
