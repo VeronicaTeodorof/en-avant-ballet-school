@@ -32,7 +32,7 @@ p {
 }
 
 /* grid visualisation CSS for testing */
-.container,
+/*.container,
 .row {
   border: 2px solid black;
 }
@@ -40,6 +40,6 @@ p {
 .col-12 {
   border: 2px solid white;
   background-color: lightgray;
-}
+} */
 
 
