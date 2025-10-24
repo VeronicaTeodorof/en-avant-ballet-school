@@ -1,5 +1,36 @@
 /* Google fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Luxurious Script", cursive;
+  --primary-color: #314459; /* pickled bluewood */
+  --secondary-color: #d5436f; /* deep rose */ 
+  --highlight-color: #93a3b5; /* cadet grey */
+  --heghlight-color-light: #eedde3; /* lavender pinocchio */
+  --contrast-primary-color: #e6eaee; /* green white */
+
+  
+}
+
+/* Global styles */
+
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color)
+}
+
 /* grid visualisation CSS for testing */
 .container,
 .row {
@@ -11,7 +42,4 @@
   background-color: lightgray;
 }
 
-.elegant {
-  font-family: "Raleway", cursive;
-  font-weight: bold;
-}
+
