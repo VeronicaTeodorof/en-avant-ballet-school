@@ -32,6 +32,14 @@ p {
   color: var(--contrast-primary-color);
 }
 
+.dark-background {
+  background-color: var(--primary-background-color);
+}
+
+.light-text {
+  color: var(--contrast-primary-color);
+}
+
 /* Navbar */
 #navbar {
   background-color: var(--primary-background-color);
@@ -55,4 +63,13 @@ main {
   background-color: lightgray;
 } */
 
+/* Services */
+#services .card {
+  border: none;
+  justify-content: center;
+}
+
+#services .card-link {
+  display: inline-block;
+}
 
