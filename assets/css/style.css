@@ -1,15 +1,16 @@
 /* Google fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Luxurious+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Luxurious Script", cursive;
-  --primary-background-color: #212529; /* dark */
-  --primary-color: #314459; /* pickled bluewood */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Cormorant Garamond", serif;
+  --elegant-font: "Luxurious Script", cursive;
+  --primary-color: #212529; /* dark */
+  --primary-background-color: #314459; /* pickled bluewood */
   --secondary-color: #d5436f; /* deep rose */ 
   --highlight-color: #93a3b5; /* cadet grey */
-  --heghlight-color-light: #eedde3; /* lavender pinocchio */
+  --highlight-color-light: #eedde3; /* lavender pinocchio */
   --contrast-primary-color: #e6eaee; /* green white */
 
   
@@ -19,18 +20,17 @@
 
 body {
   font-family: var(--primary-font);
+  
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--secondary-font);
+  text-transform: capitalize;
   color: var(--primary-color);
 }
 
-p {
-  color: var(--contrast-primary-color);
-}
 
 .dark-background {
   background-color: var(--primary-background-color);
@@ -71,5 +71,20 @@ main {
 
 #services .card-link {
   display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
 }
+
+#services .img-fluid {
+  width: 100%;
+  height:auto;
+}
+
+#services .btn {
+  background-color: var(--secondary-color);
+  color: var(--highlight-color-light);
+  border-radius: 0;
+}
+
+
 
