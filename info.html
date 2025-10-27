@@ -107,9 +107,8 @@
             </p>
           </div>
           <!-- img-fluid class together with max-width: 100% and height: auto added to images in this section so that they scale with the parent element -->
-          <!-- width of the card class increased with 0.5rem to fit the width of card-body class-->
           <div class="col-12">
-            <div class="card">
+            <div class="card m-0">
               <img
                 src="assets/images/lessons-card-image.webp"
                 class="card-img-top img-fluid"
@@ -122,72 +121,69 @@
                   dancers in the upper-intermmediate and advanced levels.
                 </p>
                 <p><em>Prices</em> start at <strong>£38/hour</strong></p>
-                <p class="text-start"><strong>Group lessons</strong> are avilable for dancers of all
+                <p class="text-start">
+                  <strong>Group lessons</strong> are avilable for dancers of all
                   ages and abilities. We offer: baby ballet classes, beginners,
-                  intermediate, and advanced lessons.</p>
+                  intermediate, and advanced lessons.
+                </p>
                 <p><em>Prices</em> start at <strong>£10/half hour</strong></p>
-                <p>For timetables please see <a href="#lessons" class="card-link">below</a></p>
-                <p><a href="#" class="btn btn-primary">Book a free trial now</a></p>
+                <p>
+                  For timetables please see
+                  <a href="#lessons" class="card-link">below</a>
+                </p>
+                <p>
+                  <a href="register.html" class="btn">Book a free trial now</a>
+                </p>
               </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="card" style="width: 100%; height: auto">
+            <div class="card m-0">
               <img
                 src="assets/images/mental-training-card-image.webp"
                 class="card-img-top img-fluid"
                 alt="Image of theatre seats"
               />
-              <div
-                class="card-body text-center mb-3 dark-background light-text"
-                style="padding-right: 0"
-              >
-                <h3 class="card-title">Get Ready</h3>
+              <div class="card-body text-center mb-3">
                 <h4 class="card-title">Mental Training for Performance</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                  <a href="#lessons" class="card-link">Read more</a>
+                <p class="card-text text-start">
+                  Learn how to manage anxiety, improve focus, visualize your
+                  performance, build confidence!
                 </p>
-                <a href="#" class="btn btn-primary">Get in touch</a>
+                <p><em>Prices</em> start at <strong>£50/hour</strong></p>
+                <a href="register.html" class="btn">Get in touch</a>
               </div>
             </div>
           </div>
           <div class="col-12">
-            <div class="card" style="width: 100%; height: auto">
+            <div class="card m-0">
               <img
-                src="assets/images/lessons-card-image.webp"
+                src="assets/images/performance-card-image.webp"
                 class="card-img-top img-fluid"
-                alt="Two little ballerinas, dressed in white, with their teacher"
+                alt="Ballerina finishing her performance"
               />
-              <div class="card-body text-center mb-3">
-                <h3 class="card-title">Learn</h3>
-                <h4 class="card-title">Individual and Group Lessons</h4>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                  <a href="#lessons" class="card-link">Read more</a>
+              <div
+                class="card-body text-center secondary-light-background mb-3"
+              >
+                <h4 class="card-title">Performances</h4>
+                <p class="card-text text-start">
+                  All dancers are encouraged to take part in monthly
+                  performances. Best improvers will be selected for our annual
+                  summer performance.
                 </p>
-                <a href="#" class="btn btn-primary">Book a free trial now</a>
+                <p class="text-start">
+                  For a calendar of our performances please see <a class="card-link">below</a>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Lessons Section-->
-      <section id="lessons">
-        <h2>Lessons</h2>
-      </section>
-
-      <!-- Mental Training Section -->
-      <section id="mental-training">
-        <h2>Mental Training for Performance</h2>
-      </section>
-
-      <!-- Performances -->
-      <section id="performances">
-        <h2>Performances</h2>
+      <section id="dates">
+        <div id="timetable>"></div>
+        <!-- use bootstrap display property (.d) to make image visible only on medium and large screens-->
+        <div id="image" class=".d-none .d-md-block"></div>
+        <div id="calendar"></div>
       </section>
     </main>
     <!--Bootstrap JS -->
