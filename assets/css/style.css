@@ -26,7 +26,14 @@ h2,
 h3 {
   font-family: var(--primary-font);
   text-transform: capitalize;
-  color: var(--primary-color);
+}
+
+.light-background {
+  background-color: var(--highlight-color-light);
+}
+
+.secondary-light-background {
+  background-color: var(--contrast-primary-color);
 }
 
 /* Navbar */
@@ -57,6 +64,7 @@ main {
   border: none;
   border-radius: 0;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 #services .card-link {
@@ -78,4 +86,15 @@ main {
   border-radius: 0;
 }
 
+#services .card-title {
+  text-align: center;
+}
 
+#services .card-footer {
+  text-align: center;
+}
+/* Media quieries */
+/* For medium screen sizes 768px and wider */
+@media screen and (min-width: 768px) {
+ 
+}
