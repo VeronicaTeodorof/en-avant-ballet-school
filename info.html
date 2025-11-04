@@ -96,7 +96,7 @@
       </section>
 
       <!-- Services Section -->
-      <!-- This section is structure using Bootstrap grid and Bootstrap cards -->
+      <!-- This section is structured using Bootstrap grid and Bootstrap cards -->
       <section id="services" class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
@@ -107,7 +107,7 @@
             </p>
           </div>
           <!-- img-fluid class together with max-width: 100% and height: auto added to images in this section so that they scale with the parent element -->
-           <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6">
             <div class="card">
               <img
                 src="assets/images/lessons-card-image.webp"
@@ -119,13 +119,11 @@
                 <p class="card-text text-start">
                   <strong>Group lessons</strong> are avilable for dancers of all
                   ages and abilities. We offer: baby ballet classes, beginners,
-                  intermediate, and advanced lessons.
-                </p>
-                <p><em>Prices</em> start at <strong>£10/half hour</strong></p>
-                <p>For timetables please see
+                  intermediate, and advanced lessons. For timetables please see
                   <a href="#lessons" class="card-link">below</a>
                 </p>
-                  <a href="register.html" class="btn">Book a free trial now</a>
+                <p><em>Prices</em> start at <strong>£10/half hour</strong></p>
+                <a href="register.html" class="btn">Book a free trial now</a>
               </div>
             </div>
           </div>
@@ -172,9 +170,7 @@
                 class="card-img-top img-fluid"
                 alt="Ballerina finishing her performance"
               />
-              <div
-                class="card-body text-center mb-3"
-              >
+              <div class="card-body text-center mb-3">
                 <h3 class="card-title">Performances</h3>
                 <p class="card-text text-start">
                   All dancers are encouraged to take part in monthly
@@ -182,18 +178,69 @@
                   summer performance.
                 </p>
                 <p class="text-start">
-                  For a calendar of our performances please see <a class="card-link">below</a>
+                  For a calendar of our performances please see
+                  <a class="card-link">below</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="dates">
-        <div id="timetable>"></div>
-        <!-- use bootstrap display property (.d) to make image visible only on medium and large screens-->
-        <div id="image" class=".d-none .d-md-block"></div>
-        <div id="calendar"></div>
+      <section id="dates" class="container">
+        <div class="row">
+          <!-- Group Lessons Timetable-->
+          <div id="timetable>">
+            <table class="caption-top">
+              <caption>Group Lessons Timetable</caption>
+              <tr>
+                <th scope="col">Group</th>
+                <th scope="col">Day</th>
+                <th scope="col">Time</th>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2">Baby Ballet</th>
+                <td>Mon - Fri</td>
+                <td>11am - 11:30am</td>
+              </tr>    
+              <tr>
+                <td>Sat  -Sun</td>
+                <td>10am - 10.30am</td>
+              </tr>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2">Begginers</td>
+                <td>Mon - Fri</td>
+                <td>4pm - 5pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun</td>
+                <td>11am - 12pm</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2">Intermediate</th>
+                <td>Mon - Fri</td>
+                <td>5pm - 6pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun</td>
+                <td>12pm - 1pm</td>
+              </tr>
+              <tr>
+                <th scope="row" rowspan="2">Advanced</th>
+                <td>Mon - Fri</td>
+                <td>6pm -7pm</td>
+              </tr>
+              <tr>
+                <td>Sat - Sun</td>
+                <td>2pm - 3pm</td>
+              </tr>
+              
+            </table>
+          </div>
+          <!-- use bootstrap display property (.d) to make image visible only on medium and large screens-->
+          <div id="image" class=".d-none .d-md-block"></div>
+          <div id="calendar"></div>
+        </div>
       </section>
     </main>
     <!--Bootstrap JS -->

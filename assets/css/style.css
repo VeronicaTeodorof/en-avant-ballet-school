@@ -28,6 +28,16 @@ h3 {
   text-transform: capitalize;
 }
 
+/* Table styles added for learning and experimenting */
+table, th, td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
 .light-background {
   background-color: var(--highlight-color-light);
 }
@@ -74,10 +84,9 @@ main {
 }
 
 #services .img-fluid {
-  width: 100%;
-  height:auto;
+  
   border-radius: 0;
-  margin: 0;
+  
 }
 
 #services .btn {
@@ -94,7 +103,24 @@ main {
   text-align: center;
 }
 /* Media quieries */
-/* For medium screen sizes 768px and wider */
-@media screen and (min-width: 768px) {
- 
+/* For small and medium screen sizes max-width 992px */
+@media (max-width: 992px) {
+  #section .img-fluid {
+   width: 100%;
+   height:auto;
+  }
+}
+  
+/* For large screen sizes 992px and wider */
+@media (min-width: 992px) {
+ #section p {
+  font-size: 4em;
+ }
+
+  #section .img-fluid {
+    width:auto;
+    max-height: 460px;
+
+  }
+  
 }
