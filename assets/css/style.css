@@ -102,6 +102,12 @@ main {
 #services .card-footer {
   text-align: center;
 }
+
+/* Dates section */
+#images-for-dates {
+  max-width: 320px;
+  height: auto;
+}
 /* Media quieries */
 /* For small and medium screen sizes max-width 992px */
 @media (max-width: 992px) {
