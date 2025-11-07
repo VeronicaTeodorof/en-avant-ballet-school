@@ -12,6 +12,7 @@
   --highlight-color: #93a3b5; /* cadet grey */
   --highlight-color-light: #eedde3; /* lavender pinocchio */
   --contrast-primary-color: #e6eaee; /* green white */ 
+  --highlight-color-dark: #a7254c; /* hover rose */
 }
 
 /* Global styles */
@@ -27,19 +28,11 @@ h3 {
   font-family: var(--primary-font);
 }
 
-.light-background {
-  background-color: var(--highlight-color-light);
-}
-
-.secondary-light-background {
-  background-color: var(--contrast-primary-color);
-}
-
 /* Navbar */
-#navbar {
-  background-color: var(--primary-background-color);
-  color: var(--secondary-color);
-}
+/* #navbar {
+ background-color: var(--primary-color)!;
+  color: var(--contrast-primary-color);
+} */
 
 /* Main */
 /* push main down so that navbar doesn't overlap */
@@ -83,16 +76,22 @@ main {
   color: var(--secondary-color);
 }
 
-#services .img-fluid {
-  
-  border-radius: 0;
-  
+#services .card-link:hover {
+  color: var(--highlight-color-dark);
 }
+
+#services .img-fluid {
+  border-radius: 0;
+  }
 
 #services .btn {
   background-color: var(--secondary-color);
   color: var(--highlight-color-light);
   border-radius: 0;
+}
+
+#services .btn:hover {
+  background-color: var(--highlight-color-dark);
 }
 
 #services .card-title {
@@ -105,21 +104,35 @@ main {
 
 /* Dates section */
 
+/* Footer / contact */
+#contact {
+  padding-bottom: 3rem;
+}
+
+#contact i {
+  color: var(--secondary-color);
+  font-size: 1.9rem;
+}
+
+#contact i:hover {
+  color: var(--highlight-color-dark);
+}
+
 
 /* Media quieries */
 /* For small and medium screen sizes max-width 992px */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   #section .img-fluid {
    width: 100%;
    height:auto;
   }
-}
+} */
   
-/* For large screen sizes 992px and wider */
+/* For large screen sizes 992px and wider
 @media (min-width: 992px) {
  #section p {
   font-size: 4em;
- }
+ } */
 
   #section .img-fluid {
     width:auto;
@@ -127,4 +140,3 @@ main {
 
   }
   
-}
