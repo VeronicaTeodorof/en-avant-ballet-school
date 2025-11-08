@@ -104,6 +104,12 @@ main {
 
 /* Dates section */
 
+/* Form section */
+#registration-form sup {
+  color: var(--secondary-color);
+  font-size: 0.5rem;
+}
+
 /* Footer / contact */
 #contact {
   padding-bottom: 3rem;

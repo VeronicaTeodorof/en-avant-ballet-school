@@ -64,7 +64,7 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="info.html">About Us</a>
+                  <a class="nav-link" href="info.html">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="info.html#services">Services</a>
@@ -85,3 +85,92 @@
         </div>
       </nav>
     </header>
+    <!-- Main -->
+    <main>
+      <section id="register">
+        <!-- Registration Form -->
+        <form id="registration-form" action="https://formdump.codeinstitute.net" method="POST">
+          <h1>Step Forward</h1>
+          <h2>Register Here</h2>
+          <div>
+            <label for="dancer-name">Dancer's Full Name: <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="text" name="dancer-name" id="dancer-name" required><br>
+          </div>
+          <div>
+            <label for="dob">Date of Birth: <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="date" name="dob" id="dob" required><br>
+          </div>
+          <div>
+            <label for="parent-name">Parent's Full Name: (required for dancers under 18 years old only)</label>
+            <input type="text" name="parent-name" id="parent-name"><br>
+          </div>
+          <div>
+            <label for="email">Email: <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="email" name="email" id="email" required><br>
+          </div>
+          <div>
+            <label for="phone-number">Phone Number: <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="tel" name="phone-number" id="phone-number" required><br>
+          </div>
+          <div>
+            <label for="emergency-number">Emergency Contact Number: <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="tel" name="emergency-number" id="emergency-number"><br>
+          </div>
+          <div>
+            <label for="conditions">Any medical conditions/medication we should be aware of? <sup><i class="fa-solid fa-asterisk"></i></sup></label>
+            <input type="text" name="conditions" id="conditions"><br>
+          </div>
+          <div>
+            <fieldset>
+              <legend>What would you like to register for? <sup><i class="fa-solid fa-asterisk"></i></sup></legend>
+              <div>
+                <label for="trial">Trial Lesson</label>
+                <input type="checkbox" name="service" id="trial" value="trial">
+              </div>
+              <div>
+                <label for="group">Group Lessons</label>
+                <input type="checkbox" name="service" id="group" value="group">
+              </div>
+              <div>
+                <label for="individual">Individual Lessons</label>
+                <input type="checkbox" name="service" id="individual" value="individual">
+              </div>
+              <div>
+                <label for="mental">Mental Training</label>
+                <input type="checkbox" name="service" id="mental" value="mental">
+              </div>
+            </fieldset>
+          </div>
+          <div>
+            <label for="experience">Previous dance experience:</label>
+            <input type="text"><br>
+          </div>
+          <div>
+            <label for="days">Preferred Days:</label>
+            <input type="text" name="days" id="days" required><br>
+          </div>
+          <div>
+            <label for="times">Preferred Times: (for group lessons please consult our <a href="info.html#timetable">timetable</a>)</a></label>
+            <input type="time" name="times" id="times"><br>
+          </div>
+          <div>
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="2" cols="20"></textarea>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+    </main>
+    <!--Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awsome Kit -->
+    <script
+      src="https://kit.fontawesome.com/ed5a62b3e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
