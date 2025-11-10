@@ -28,11 +28,11 @@ h3 {
   font-family: var(--primary-font);
 }
 
-/* Navbar */
-/* #navbar {
- background-color: var(--primary-color)!;
-  color: var(--contrast-primary-color);
-} */
+/* Header */
+header {
+  /*pushes header down 100px so it doesn't overlap the navbar */
+  margin-top: 100px;
+}
 
 /* Main */
 /* push main down so that navbar doesn't overlap */
@@ -105,6 +105,13 @@ main {
 /* Dates section */
 
 /* Form section */
+#register {
+  background-image: url("../images/timetables-image.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
 #registration-form sup {
   color: var(--secondary-color);
   font-size: 0.5rem;
