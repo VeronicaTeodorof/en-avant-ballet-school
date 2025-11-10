@@ -75,10 +75,13 @@
                 <a class="nav-link" href="#services">What we offer</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#timetable">Timetable</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="register.html">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -129,7 +132,7 @@
                   <strong>Group lessons</strong> are avilable for dancers of all
                   ages and abilities. We offer: baby ballet classes, beginners,
                   intermediate, and advanced lessons. For timetables please see
-                  <a href="#timetable" class="card-link">below</a>
+                  <a href="#timetable" class="card-link body-link">below</a>
                 </p>
                 <p><em>Prices</em> start at <strong>£10/half hour</strong></p>
                 <a href="register.html" class="btn">Book a free trial now</a>
@@ -188,7 +191,7 @@
                 </p>
                 <p class="text-start">
                   For a calendar of our performances please see
-                  <a href="#calendar" class="card-link">below</a>
+                  <a href="#calendar" class="card-link body-link">below</a>
                 </p>
               </div>
             </div>
@@ -202,8 +205,9 @@
           </div>
           <!-- Group Lessons Timetable-->
           <div id="timetable" class="col-12 col-md-6">
-            <table class="table table-hover table-dark table-striped-columns caption-top">
-              <caption>Group Lessons Timetable</caption>
+            <table class="table table-hover table-dark caption-top">
+              <!-- style added here to override the bootstrap caption-top class colour -->
+              <caption style="color: var(--text-color);">Group Lessons Timetable</caption>
               <thead>
                 <tr>
                   <th scope="col">Group</th>
@@ -255,9 +259,10 @@
           <!-- use bootstrap display property (.d) to make image visible only on medium and large screens-->
           <!-- <div id="image" class=".d-none .d-md-block"></div> -->
           <!-- Performance calendar -->
-          <div id="calendar" class="col-12 col-md-6">
-            <table class="table table-striped-columns table-hover caption-top">
-              <caption>Perfomance Calendar</caption>
+          <div id="calendar" class="col-12 col-md-6 primary-background">
+            <table class="table table-hover caption-top">
+              <!-- style added here to override bootstrap caption-top class colour -->
+              <caption style="color: var(--text-color)">Perfomance Calendar</caption>
               <thead>
                 <tr>
                   <th scope="col">Date</th>
@@ -309,8 +314,8 @@
           </div>
           <!-- Office opening times -->
           <div class="col-12 col-md-6">
-            <table class="table">
-              <caption class="caption-top text-center">Office Opening Times</caption>
+            <table class="table table-hover">
+              <caption class="caption-top text-center text-color">Office Opening Times</caption>
               <tr>
                 <th scope="row">Mon-Fri</th>
                 <td>09am - 5pm</td>
