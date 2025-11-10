@@ -20,76 +20,74 @@
     <!-- custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
-    <!-- Header-->
-    <header>
-      <!-- Bootstrap Dark Offcanvas Navigation -->
-      <!-- navbar-expand-lg class added to make it expand on screens 992px or larger -->
-      <nav
-        id="navbar"
-        class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">En Avant</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Step Forward
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="info.html"
-                    >About Us</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#services">What we offer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="register.html">Register</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
+    <!-- Navigation - Bootstrap Dark Offcanvas Navigation -->
+    <!-- navbar-expand-lg class added to make it expand on screens 992px or larger -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">En Avant</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Step Forward
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="info.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">What we offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <main>
+      </div>
+    </nav>
+    
+    <!-- Header -->
+    <header id="info-header" class="primary-background">
       <!-- About Us section -->
       <section id="about-us" class="container">
         <h1 class="display-2 text-center">Welcome to En Avant Ballet School</h1>
@@ -104,7 +102,8 @@
           techniques are embedded in the day-to-day lessons.</p>
         <p>We motivate our students to set hight targets and always take one step further: En Avant!</p>
       </section>
-      
+    </header>
+    <main id="info-main" class="primary-background">
       <!-- Services Section -->
       <!-- This section is structured using Bootstrap grid and Bootstrap cards -->
       <section id="services" class="container-fluid">
@@ -291,6 +290,48 @@
         </div>
       </section>
     </main>
+    <footer id="contact" class="mt-auto primary-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="text-center">Contact Us</h3>
+          </div>
+          <!-- Contact info -->
+          <div class="col-12 col-md-6">
+            <address>
+              <strong>En Avant Ballet School</strong><br>
+              18 Regents Pard Road,<br>
+              London,<br>
+              N3 5LZ<br>
+            </address>
+            <p>Phone number: 02043849478</p> 
+            <p>Email: info@enavant.co.uk</p>
+          </div>
+          <!-- Office opening times -->
+          <div class="col-12 col-md-6">
+            <table class="table">
+              <caption class="caption-top text-center">Office Opening Times</caption>
+              <tr>
+                <th scope="row">Mon-Fri</th>
+                <td>09am - 5pm</td>
+              </tr>
+              <tr>
+                <th scope="row">Sat-Sun</th>
+                <td>Closed</td>
+              </tr>
+            </table>
+          </div>
+          <!-- Social media links -->
+          <div class="col-12 social-links">
+            <p>
+              <a href="https://en-gb.facebook.com/" target="_blank" aria-label="Visit our Facebook page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our Instagram page (opens in a new tab)" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
+              <a href="https://x.com/" target="_blank" aria-label="Visit our X feed (opens in a new tab)"><i class="fa-brands fa-square-x-twitter" rel="noopener"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!--Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

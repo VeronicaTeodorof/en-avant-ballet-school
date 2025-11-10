@@ -8,6 +8,7 @@
   --elegant-font: "Luxurious Script", cursive;
   --primary-color: #212529; /* dark */
   --primary-background-color: #314459; /* pickled bluewood */
+  --primary-background: #eff2f1; /* conch */
   --secondary-color: #d5436f; /* deep rose */ 
   --highlight-color: #93a3b5; /* cadet grey */
   --highlight-color-light: #eedde3; /* lavender pinocchio */
@@ -26,18 +27,17 @@ h1,
 h2,
 h3 {
   font-family: var(--primary-font);
+  color: var(--primary-background-color);
+}
+
+.primary-background {
+  background-color: var(--primary-background);
 }
 
 /* Header */
 header {
-  /*pushes header down 100px so it doesn't overlap the navbar */
-  margin-top: 100px;
-}
-
-/* Main */
-/* push main down so that navbar doesn't overlap */
-main {
-  padding-top: 56px;
+  /*pushes header down 50px so it doesn't overlap the navbar */
+  margin-top: 50px;
 }
 
 /* grid visualisation CSS for testing */
@@ -51,6 +51,7 @@ main {
   background-color: lightgray;
 } */
 
+/* index.html page */
 /* Testimonials */
 #testimonials .fa-star {
   color: gold;
@@ -61,13 +62,14 @@ main {
   border: none;
 }
 
-
+/* info.html page */
 /* Services */
 #services .card {
   border: none;
   border-radius: 0;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: var(--primary-background);
 }
 
 #services .card-link {
@@ -103,6 +105,13 @@ main {
 }
 
 /* Dates section */
+
+/* register.html page */
+
+#registration-header,
+#registration-main {
+  background-color: var(--primary-background);
+}
 
 /* Form section */
 #register {
