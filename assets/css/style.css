@@ -93,6 +93,7 @@ header {
 }
 
 /* info.html page */
+
 /* Services */
 #services .card {
   border: none;
@@ -126,12 +127,6 @@ header {
 }
 
 /* Form section */
-#register {
-  background-image: url("../images/timetables-image.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 100%;
-}
 
 #registration-form sup {
   color: var(--secondary-color);
@@ -142,6 +137,12 @@ header {
 .form-control {
   border: 1px solid var(--highlight-color-dark);
   border-radius: 0%;
+}
+
+.form-control {
+  padding: 0.2rem 0.75rem;
+  max-height: 1.5rem;
+  max-width: 75%;
 }
 
 /* Footer / contact */
@@ -160,23 +161,20 @@ header {
 
 
 /* Media quieries */
-/* For small and medium screen sizes max-width 992px */
-/* @media (max-width: 992px) {
-  #section .img-fluid {
-   width: 100%;
-   height:auto;
-  }
-} */
+/*info.html page */
+
+
+
+/* register.html page */
+/* Form section */
+/* for medum and large screens 768px and above */
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  #register {
+  background-image: url("../images/timetables-image.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
   
-/* For large screen sizes 992px and wider
-@media (min-width: 992px) {
- #section p {
-  font-size: 4em;
- } */
-
-  #section .img-fluid {
-    width:auto;
-    max-height: 460px;
-
-  }
+}
   
