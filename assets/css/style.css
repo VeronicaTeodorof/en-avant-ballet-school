@@ -65,10 +65,11 @@ p {
 }
 
 /* Header */
-header {
+
   /*pushes header down 50px so it doesn't overlap the navbar */
-  margin-top: 50px;
-}
+  /* comment our to see how the navbar behaves */
+  /* margin-top: 50px; */
+
 
 /* grid visualisation CSS for testing */
 /*.container,
