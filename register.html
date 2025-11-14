@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
     <title>En Avant Ballet School | Register</title>
     <meta
       name="description"
       content="En Avant Ballet School, take a step forward in your ballet journey! Register today to book a free trial or enroll in one of our classes!"
-    />
+    >
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -15,10 +15,10 @@
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-    />
+    >
 
     <!-- custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
@@ -83,19 +83,23 @@
     <!-- Header-->
     <header id="registration-header">
       <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="display-3 pt-4">Step Forward!</h1>
-          <p>Thank you for choosing to become part of our family! Please fill out the form below.
-           You will receive a confirmation email for your registration and we will contact you shortly to
-           make the final arrangements and answer other questions that you may have.
-          </p>
+        <div class="row">
+          <div class="col-12">
+            <h1 class="display-3 pt-4">Step Forward!</h1>
+            <p>Thank you for choosing to become part of our family! Please fill out the form below.
+            You will receive a confirmation email for your registration and we will contact you shortly to
+            make the final arrangements and answer other questions that you may have.
+            </p>
+          </div>
         </div>
       </div>
     </header>
     <!-- Main -->
     <main id="registration-main">
       <section id="register" class="container text-color">
+        <div>
+          <h2>Registration form</h2>
+        </div>
         <!-- Registration Form -->
         <form id="registration-form" action="https://formdump.codeinstitute.net" method="POST">
           <div class="row">
@@ -151,14 +155,14 @@
             </div>
             <div class="col-12 col-md-8">
               <label for="experience" class="form-label">Previous dance experience:</label>
-              <input class="form-control" type="text"><br>
+              <input class="form-control" type="text" id="experience" name="experience"><br>
             </div>
             <div class="col-12 col-md-8 col-lg-6">
               <label for="days" class="form-label">Preferred Days:</label>
               <input class="form-control" type="text" name="days" id="days" required><br>
             </div>
             <div class="col-12 col-md-8 col-lg-6">
-              <label for="times" class="form-label">Preferred Times: (for group lessons please consult our <a href="info.html#timetable" class="body-link">timetable</a>)</a></label>
+              <label for="times" class="form-label">Preferred Times: (for group lessons please consult our <a href="info.html#timetable" class="body-link">timetable</a></label>
               <input class="form-control" type="time" name="times" id="times"><br>
             </div>
             <div class="col-12 col-md-8">
@@ -168,8 +172,8 @@
             <div>
               <button type="submit" class="btn">Register</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
      <footer id="contact" class="mt-auto primary-background">
