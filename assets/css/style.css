@@ -83,6 +83,14 @@ p {
 } */
 
 /* index.html page */
+/* Hero Section */
+#hero {
+  height: 75vh;
+  width: 100%;
+  background: url(../images/hero_image.png) no-repeat center center/auto;
+  background-color: var(--primary-color);
+}
+
 /* Testimonials */
 #testimonials .fa-star {
   color: gold;
