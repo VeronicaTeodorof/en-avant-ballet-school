@@ -85,13 +85,20 @@ p {
 /* index.html page */
 /* Hero Section */
 #hero {
-  height: 75vh;
+  height: 60vh;
   width: 100%;
-  background: url(../images/hero_image.png) no-repeat center center/auto;
-  background-color: var(--primary-color);
+  background: url(../images/hero_image.png) no-repeat center center/contain;
+  background-color: var(--primary-background-color);
 }
 
 /* Testimonials */
+#testimonials {
+  background-color: var(--primary-background-color);
+}
+
+#testimonials h2 {
+  color: var(--contrast-primary-color)
+}
 #testimonials .fa-star {
   color: gold;
 }
