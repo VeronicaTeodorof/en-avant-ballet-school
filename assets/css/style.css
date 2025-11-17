@@ -83,6 +83,10 @@ p {
 } */
 
 /* index.html page */
+#index-header {
+  background-color: var(--primary-background-color);
+}
+
 /* Hero Section */
 #hero {
   height: 60vh;
