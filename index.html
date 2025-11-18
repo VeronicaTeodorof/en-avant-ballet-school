@@ -42,12 +42,12 @@
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
     <!-- Header-->
-    <header id="index-header">
+    <header id="index-header" class="primary-background-color">
       <!-- Bootstrap Dark Offcanvas Navbar chosen for minimum information display on home page -->
       <!-- .fixed-top removed .sticky-top doesn't work on index.html-->
       <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <a class="btn" href="register.html">Book a free trial now</a></a>
+          <a class="btn" href="register.html">Book a free trial now</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -100,7 +100,7 @@
                   <a class="nav-link" href="register.html">Register</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="info.html#contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -109,8 +109,8 @@
       </nav>
       <section>
         <div>
-          <h1 class="display-1 text-center" style="color:var(--primary-background); background-color: var(--primary-background-color);"
-        >En Avant Ballet School</h1>
+          <h1 id="index-h1"class="display-1 text-center">
+        En Avant Ballet School</h1>
         </div>
       </section>
     </header>
@@ -227,7 +227,7 @@
     <!-- Footer / contact section -->
     <!-- footer element is placed outside of the grid structure to make sure it spans the whole width of the page for styling purposes-->
     <!-- mt-auto added to push footer to the bottom of the page -->
-    <footer id="contact" class="mt-auto">
+    <footer id="contact"  class="mt-auto primary-background">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -237,7 +237,7 @@
           <div class="col-12 col-md-6">
             <address>
               <strong>En Avant Ballet School</strong><br />
-              18 Regents Pard Road,<br />
+              18 Regents Park Road,<br />
               London,<br />
               N3 5LZ<br />
             </address>
@@ -247,7 +247,7 @@
           <!-- Office opening times -->
           <div class="col-12 col-md-6">
             <table class="table">
-              <caption class="caption-top text-center">
+              <caption class="caption-top text-center text-color">
                 Office Opening Times
               </caption>
               <tr>

@@ -35,8 +35,13 @@ p {
   color: var(--text-color);
 }
 
+
 .primary-background {
   background-color: var(--primary-background);
+}
+
+.primary-background-color {
+  background-color: var(--primary-background-color);
 }
 
 .text-color {
@@ -83,9 +88,6 @@ p {
 } */
 
 /* index.html page */
-#index-header {
-  background-color: var(--primary-background-color);
-}
 
 /* Hero Section */
 #hero {
@@ -93,6 +95,10 @@ p {
   width: 100%;
   background: url(../images/hero_image.png) no-repeat center center/contain;
   background-color: var(--primary-background-color);
+}
+
+#index-h1 {
+  color: var(--primary-background);
 }
 
 /* Testimonials */
@@ -112,7 +118,17 @@ p {
   border: none;
 }
 
+
 /* info.html page */
+/* About Us section*/
+
+#about-us,
+#services,
+#dates {
+  border-bottom: 1px solid var(--highlight-color-dark);
+  border-bottom-width: 60%;
+}
+
 
 /* Services */
 
@@ -172,7 +188,7 @@ p {
 
 /* Footer / contact */
 #contact {
-  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 #contact i {
