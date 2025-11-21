@@ -42,7 +42,7 @@
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
     <!-- Header-->
-    <header id="index-header" class="secondary-background">
+    <header id="index-header" class="primary-background-color">
       <!-- Bootstrap Dark Offcanvas Navbar chosen for minimum information display on home page -->
       <!-- .fixed-top removed .sticky-top doesn't work on index.html-->
       <nav id="navbar" class="navbar navbar-dark bg-dark sticky-top">
@@ -99,24 +99,22 @@
           </div>
         </div>
       </nav>
-      <section id="main_header">
-        <div>
-          <h1 id="index-h1" class="display-1 text-center">
-        En Avant Ballet School</h1>
-        </div>
-      </section>
     </header>
     <!-- Main -->
     <main>
       <!-- Cover section -->
-      <section id="hero" class="container-fluid">
+      <section id="hero" class="container-fluid" class="primary-background-color">
         <div class="row">
+          <div id="index-h1" class="col-12">
+            <h1 class="text-center display-1">En Avant Ballet School</h1>
+          </div>
           <div id="hero_image" class="col-12">
+            <h2>Step forward!</h2>
           </div>
         </div>  
       </section>
       <!-- Testimonials section -->
-      <section id="testimonials" class="container-fluid secondary-background">
+      <section id="testimonials" class="container-fluid">
         <div class="row">
           <div class="col-12 text-center">
             <h2 class="display-4">Your Words</h2>

@@ -4,31 +4,24 @@
 /* CSS Variables */
 :root {
   --primary-font: "Montserrat", sans-serif;
-  --secondary-font: "Cormorant Garamond", serif;
   --elegant-font: "Luxurious Script", cursive;
-  --primary-color: #212529; /* dark */
-  --primary-background-color: #314459; /* pickled bluewood */
-  --primary-background: #eff2f1; /* haze black */
-  --secondary-color: #d5436f; /* deep rose */ 
-  --highlight-color: #93a3b5; /* cadet grey */
-  --highlight-color-light: #eedde3; /* lavender pinocchio */
-  --contrast-primary-color: #e6eaee; /* green white */ 
-  --highlight-color-dark: #a7254c; /* hover rose */
+  --dark-color: #212529; /* dark */
+  --dark-blue: #314459; /* pickled bluewood */
+  --light-blue: #eff2f1; /* haze black */
+  --rose: #d5436f; /* deep rose */ 
+  --dark-rose: #a7254c; /* hover rose */
   --text-color: #030405; /* dark side of the moon */
 }
 
 /* Global styles */
-
 body {
   font-family: var(--primary-font);
-  
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--primary-font);
-  color: var(--primary-background-color);
+  color: var(--dark-blue);
 }
 
 p {
@@ -37,11 +30,11 @@ p {
 
 
 .primary-background {
-  background-color: var(--primary-background);
+  background-color: var(--light-blue);
 }
 
-.primary-background-color {
-  background-color: var(--primary-background-color);
+.secondary-background {
+  background-color: var(--dark-blue);
 }
 
 .text-color {
@@ -51,45 +44,29 @@ p {
 .body-link {
   display: inline-block;
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--rose);
 }
 
 .body-link:hover {
-  color: var(--highlight-color-dark);
+  color: var(--dark-rose);
 }
 
 .btn {
-  background-color: var(--secondary-color);
-  color: var(--highlight-color-light);
+  background-color: var(--rose);
+  color: white;
   border-radius: 0;
 }
 
 .btn:hover {
-  background-color: var(--highlight-color-dark);
-  color: var(--highlight-color-light);
+  background-color: var(--dark-rose);
+  color: white;
 }
 
 .table {
-  border: 1px solid var(--highlight-color-dark);
+  border: 1px solid var(--rose);
  }
 
 /* Header */
-
-  /*pushes header down 50px so it doesn't overlap the navbar */
-  /* comment our to see how the navbar behaves */
-  /* margin-top: 50px; */
-
-
-/* grid visualisation CSS for testing */
-/*.container,
-.row {
-  border: 2px solid black;
-}
-
-.col-12 {
-  border: 2px solid white;
-  background-color: lightgray;
-} */
 
 /* index.html page */
 
@@ -98,20 +75,18 @@ p {
   height: 35vh;
   width: 100%;
   background: url(../images/hero_image.png) no-repeat center center/contain;
-  background-color: var(--primary-background-color);
+  background-color: var(--dark-blue);
 }
 
 #index-h1 {
-  color: var(--primary-background);
+  color: var(--light-blue);
 }
+
 
 /* Testimonials */
-#testimonials {
-  background-color: var(--primary-background-color);
-}
 
 #testimonials h2 {
-  color: var(--contrast-primary-color)
+  color: var(--light-blue)
 }
 #testimonials .fa-star {
   color: gold;
@@ -130,7 +105,7 @@ p {
 #services,
 #dates,
 #register {
-  border-bottom: 1px solid var(--highlight-color-dark);
+  border-bottom: 1px solid var(--rose);
   border-bottom-width: 60%;
 }
 
@@ -142,7 +117,7 @@ p {
   border-radius: 0;
   justify-content: center;
   margin-bottom: 20px;
-  background-color: var(--primary-background);
+  background-color: var(--light-blue);
 }
 
 #services .img-fluid {
@@ -160,28 +135,22 @@ p {
 /* Dates section */
 #dates i {
   font-size: 1.5 rem;
-  color: var(--primary-background-color);
+  color: var(--dark-blue);
 }
 
 
 
 /* register.html page */
-
-#registration-header,
-#registration-main {
-  background-color: var(--primary-background);
-}
-
 /* Form section */
 
 #registration-form sup {
-  color: var(--secondary-color);
+  color: var(--rose);
   font-size: 0.5rem;
 }
 
 .form-check-input,
 .form-control {
-  border: 1px solid var(--highlight-color-dark);
+  border: 1px solid var(--dark-rose);
   border-radius: 0%;
 }
 
@@ -197,17 +166,17 @@ p {
 }
 
 #contact i {
-  color: var(--secondary-color);
+  color: var(--rose);
   font-size: 1.9rem;
 }
 
 #contact i:hover {
-  color: var(--highlight-color-dark);
+  color: var(--dark-rose);
 }
 
 /* Media quieries */
 
-/* form medium screens min width 768px, max width 1024px */
+/* for medium screens min width 768px, max width 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #registration-form {
   background-color: rgba(239, 242, 241, 0.7);

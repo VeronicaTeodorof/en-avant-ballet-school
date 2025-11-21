@@ -41,7 +41,7 @@
   </head>
 
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
-  <body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100 primary-background">
     <!-- Navigation - Bootstrap Dark Offcanvas Navigation -->
     <!-- navbar-expand-lg class added to make it expand on screens 992px or larger -->
     <!-- .fixed-top removed, .sticky-top added and working; purpose: avoid navbar overlapping content-->
@@ -101,7 +101,7 @@
     </nav>
     
     <!-- Header -->
-    <header id="info-header" class="primary-background">
+    <header id="info-header">
       <!-- About Us section -->
       <section id="about-us" class="container">
         <h1 class="display-2 text-center pt-4">Welcome to En Avant Ballet School</h1>
@@ -118,7 +118,7 @@
       </section>
     </header>
 
-    <main id="info-main" class="primary-background">
+    <main id="info-main">
       <!-- Services Section -->
       <!-- This section is structured using Bootstrap grid and Bootstrap cards -->
       <section id="services" class="container mt-1">
@@ -269,7 +269,7 @@
           </div>
   
           <!-- Performance calendar -->
-          <div id="calendar" class="col-12 col-md-6 mb-4 primary-background">
+          <div id="calendar" class="col-12 col-md-6 mb-4s">
             <table class="table table-hover table-dark caption-top">
               <!-- style added here to override bootstrap caption-top class colour -->
               <caption style="color: var(--text-color)"><i class="fa-regular fa-calendar"></i> Perfomance Calendar</caption>
@@ -305,7 +305,7 @@
         </div>
       </section>
     </main>
-    <footer id="contact" class="mt-auto primary-background">
+    <footer id="contact" class="mt-auto">
       <div class="container">
         <div class="row">
           <div class="col-12">
