@@ -42,66 +42,68 @@
 
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100 primary-background">
-    <!-- Navigation - Bootstrap Dark Offcanvas Navigation -->
-    <!-- navbar-expand-lg class added to make it expand on screens 992px or larger -->
-    <!-- .fixed-top removed, .sticky-top added and working; purpose: avoid navbar overlapping content-->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
-    >
-      <div class="container-fluid">
-         <a class="btn" href="index.html">En Avant</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-              Step Forward
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="info.html"
-                  >About Us / What we offer / Timetable</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="register.html">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+    <!-- Header -->
+    <header>
+      <!-- Navigation - Bootstrap Dark Offcanvas Navigation -->
+      <!-- navbar-expand-lg class added to make it expand on screens 992px or larger -->
+      <!-- .fixed-top removed, .sticky-top added and working; purpose: avoid navbar overlapping content-->
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+      >
+        <div class="container-fluid">
+          <a class="btn" href="index.html">En Avant</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Step Forward
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="info.html"
+                    >About Us / What we offer / Timetable</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    
-    <!-- Header -->
-    <header id="info-header">
+      </nav>
+    </header>
+    <!-- Main -->
+    <main>
       <!-- About Us section -->
       <section id="about-us" class="container">
         <h1 class="display-2 text-center pt-4">Welcome to En Avant Ballet School</h1>
@@ -116,9 +118,7 @@
           techniques are embedded in the day-to-day lessons.</p>
         <p>We motivate our students to set hight targets and always take one step further: En Avant!</p>
       </section>
-    </header>
-
-    <main id="info-main">
+      
       <!-- Services Section -->
       <!-- This section is structured using Bootstrap grid and Bootstrap cards -->
       <section id="services" class="container mt-1">
@@ -305,6 +305,8 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer id="contact" class="mt-auto">
       <div class="container">
         <div class="row">
