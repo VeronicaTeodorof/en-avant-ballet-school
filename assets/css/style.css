@@ -52,13 +52,14 @@ p {
 }
 
 .btn {
-  background-color: var(--rose);
+  background-color: var(--dark-rose);
   color: white;
   border-radius: 0;
+
 }
 
 .btn:hover {
-  background-color: var(--dark-rose);
+  background-color: var(--rose);
   color: white;
 }
 
@@ -166,12 +167,12 @@ p {
 }
 
 #contact i {
-  color: var(--rose);
+  color: var(--dark-rose);
   font-size: 1.9rem;
 }
 
 #contact i:hover {
-  color: var(--dark-rose);
+  color: var(--rose);
 }
 
 /* Media quieries */
