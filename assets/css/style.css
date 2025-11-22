@@ -71,7 +71,7 @@ p {
 /* index.html page */
 
 /* Hero Section */
-#hero {
+#hero_image {
   height: 35vh;
   width: 100%;
   background: url(../images/hero_image.webp) no-repeat center center/contain;
@@ -187,7 +187,7 @@ p {
 /* for medium and large screens 768px and above */
 @media screen and (min-width: 768px) {
   /* Hero section */
-  #hero {
+  #hero_image {
   height: 60vh;
   }
 
