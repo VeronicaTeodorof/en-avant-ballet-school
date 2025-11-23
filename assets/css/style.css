@@ -175,13 +175,29 @@ p {
   color: var(--rose);
 }
 
+/* thanks.html page */
+#thank-you h1 {
+  color: var(--light-blue);
+}
+
+#thank-you-image {
+  background: url("../images/roses.jpg") no-repeat center center/contain;
+  background-position: 50%;
+  min-height: 400px;
+  max-width: auto;
+  margin-top: 50px;
+} 
+
+#home-button {
+  justify-content: center;
+}
+
 /* Media quieries */
 
 /* for medium screens min width 768px, max width 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #registration-form {
-  background-color: rgba(239, 242, 241, 0.7);
-  
+  background-color: rgba(239, 242, 241, 0.7);  
 }
 }
 
