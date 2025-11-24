@@ -183,14 +183,10 @@ p {
 #thank-you-image {
   background: url("../images/roses.jpg") no-repeat center center/contain;
   background-position: 50%;
-  min-height: 400px;
+  min-height: 300px;
   max-width: auto;
   margin-top: 50px;
 } 
-
-#home-button {
-  justify-content: center;
-}
 
 /* Media quieries */
 
@@ -214,7 +210,12 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%;
-}
+  }
+
+  /* Thanks page */
+  #thank-you-image {
+    min-height: 400px;
+  }
 }  
 
   
