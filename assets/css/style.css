@@ -44,11 +44,12 @@ p {
 .body-link {
   display: inline-block;
   text-decoration: none;
-  color: var(--rose);
+  color: var(--dark-rose);
+  font-weight: bold;
 }
 
 .body-link:hover {
-  color: var(--dark-rose);
+  color: var(--rose);
 }
 
 .btn {
