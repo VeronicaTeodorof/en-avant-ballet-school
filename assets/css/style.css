@@ -65,9 +65,14 @@ p {
   background-color: var(--dark-blue);
 }
 
-#index-h1 {
+.hero-heading {
   color: var(--light-blue);
 }
+
+#cta {
+  font-size: large;
+}
+
 
 /* Testimonials */
 #testimonials h2 {
@@ -168,6 +173,7 @@ p {
 /* thanks.html page */
 #thank-you h1 {
   color: var(--light-blue);
+  font-weight: bold;
 }
 
 #thank-you-image {
