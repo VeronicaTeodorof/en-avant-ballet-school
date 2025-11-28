@@ -62,17 +62,23 @@ p {
   height: 35vh;
   width: 100%;
   background: url(../images/hero_image.webp) no-repeat center center/contain;
+  opacity: 1;
+  animation: hero-animation 2s ease-in 1;
   background-color: var(--dark-blue);
+}
+
+@keyframes hero-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-heading {
   color: var(--light-blue);
 }
-
-#cta {
-  font-size: large;
-}
-
 
 /* Testimonials */
 #testimonials h2 {
