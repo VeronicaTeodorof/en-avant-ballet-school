@@ -41,10 +41,10 @@
 
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100 secondary-background">
-    <!-- Bootstrap Dark Offcanvas Navbar chosen for minimum information display on home page -->
+    <!-- Bootstrap Dark Offcanvas Navbar expanding on large screens -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
-        <a class="btn" href="index.html">En Avant</a>
+        <a href="register.html" id="trail-button" class="btn">En Avant</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -86,6 +86,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
               </li>
+              <li class="nav-item">
+                <a id="nav-trial" class="nav-link btn" href="#register.html">Book a free trial</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -101,14 +104,10 @@
             <h1 class="col-12 display-1 text-center hero-heading">
             En Avant Ballet School</h1>
           </div>
-          <div id="hero_image" class="col-12">
+          <div id="hero_image" class="col-12"></div>
+          <div id="trial-div" class="col-12 d-flex justify-content-center">
+            <a href="register.html" id="trial" class="btn">Book a free trial now</a>
           </div>
-          <!-- <div>
-            <h2 class="text-center hero-heading display-6">Take a step forward in your ballet journey!</h2>
-          </div> -->
-          <!-- <div class="d-flex justify-content-center">
-            <a href="register.html" id="cta" class="btn">Book a free trial now</a>
-          </div> -->
         </div>
       </section>
     </header>
@@ -117,7 +116,7 @@
       <!-- Testimonials section -->
       <section id="testimonials" class="container-fluid secondary-background">
         <div class="row">
-          <div class="col-12 text-center">
+          <div id="testimonials-heading" class="col-12 text-center">
             <h2 class="display-4">Your Words</h2>
           </div>
           <div class="col-12 col-md-6 col-xl-3 d-flex">

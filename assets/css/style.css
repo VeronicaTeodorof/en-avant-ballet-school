@@ -56,6 +56,11 @@ p {
   border: 1px solid var(--rose);
  }
 
+ /* Navbar */
+ #nav-trial {
+  display:none;
+ }
+
 /* index.html page */
 /* Hero Section */
 #hero_image {
@@ -78,9 +83,23 @@ p {
 
 .hero-heading {
   color: var(--light-blue);
+  font-weight: 300;
+}
+
+#trial-div {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+#trial {
+  font-size:large;
 }
 
 /* Testimonials */
+#testimonials-heading {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 #testimonials h2 {
   color: var(--light-blue)
 }
@@ -194,23 +213,24 @@ p {
 /* for medium screens min width 768px, max width 1024px */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #registration-form {
-  background-color: rgba(239, 242, 241, 0.7);  
+    background-color: rgba(239, 242, 241, 0.7);  
 }
 }
 
 /* for medium and large screens 768px and above */
 @media screen and (min-width: 768px) {
-  /* Hero section */
+
+/* Hero section */
   #hero_image {
-  height: 60vh;
+    height: 60vh;
   }
 
   /* Form section */
   #register {
-  background-image: url("../images/registration-image-without-background.webp");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 100%;
+    background-image: url("../images/registration-image-without-background.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
   }
 
   /* Thanks page */
@@ -218,4 +238,28 @@ p {
     min-height: 400px;
   }
 }  
+
+/* for large screens 1024px and above */
+@media screen and (min-width: 1024px) {
+  /* Navbar */
+  #nav-trial {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  /* Hero section */
+  #trial {
+    display: none;
+  }
+
+  #trial-div {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+  /* Testimonials */
+#testimonials-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+}
  
