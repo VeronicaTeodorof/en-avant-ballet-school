@@ -198,7 +198,7 @@ p {
 /* thanks.html page */
 #thank-you h1 {
   color: var(--light-blue);
-  font-weight: bold;
+  font-weight: 300;
 }
 
 #thank-you-image {
