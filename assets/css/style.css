@@ -56,6 +56,10 @@ p {
  }
 
  /* Navbar */
+ #logo {
+  height: 38px;
+  width: auto;
+ }
  #nav-trial {
   display:none;
  }
