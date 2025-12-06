@@ -137,7 +137,6 @@ p {
 #dates,
 #register {
   border-bottom: 1px solid var(--rose);
-  border-bottom-width: 60%;
 }
 
 
@@ -175,7 +174,7 @@ p {
 
 /* Dates section */
 #dates i {
-  font-size: 1.5 rem;
+  font-size: 1.5rem;
   color: var(--dark-blue);
 }
 
@@ -208,7 +207,7 @@ p {
   background: url("../images/roses.jpg") no-repeat center center/contain;
   background-position: 50%;
   min-height: 300px;
-  max-width: auto;
+  width: 100%;
   margin-top: 50px;
 } 
 
