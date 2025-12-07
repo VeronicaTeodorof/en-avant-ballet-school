@@ -40,6 +40,7 @@ p {
   color: var(--text-color);
 }
 
+/* Buttons */
 .btn {
   background-color: var(--dark-rose);
   color: white;
@@ -51,6 +52,7 @@ p {
   color: white;
 }
 
+/* Tables */
 .table {
   border: 1px solid var(--rose);
  }
